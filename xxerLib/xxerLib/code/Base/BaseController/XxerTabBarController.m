@@ -25,7 +25,7 @@
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
     UINavigationController *navi = (UINavigationController *)viewController;
-    DebugLog(@"点击tabbar didSelect的控制器 %@",navi.topViewController);
+    XXER_DEBUGLOG(@"点击tabbar didSelect的控制器 %@",navi.topViewController);
 }
 
 - (void)didReceiveMemoryWarning {

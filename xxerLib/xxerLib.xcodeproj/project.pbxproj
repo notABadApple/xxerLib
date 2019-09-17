@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		54BDC3EC0CC01122F3F0EA0A /* libPods-xxerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BE3488D7643821F71BF438 /* libPods-xxerLib.a */; };
+		9A6239152330C61400FE4680 /* XxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6239142330C61400FE4680 /* XxerViewController.m */; };
 		9AA4550223279C8600C4D560 /* XxerTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4550123279C8600C4D560 /* XxerTabBarController.m */; };
 		9ADFB2F52326411000E41F38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB2F42326411000E41F38 /* AppDelegate.m */; };
-		9ADFB2F82326411000E41F38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB2F72326411000E41F38 /* ViewController.m */; };
-		9ADFB2FB2326411000E41F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB2F92326411000E41F38 /* Main.storyboard */; };
 		9ADFB2FD2326411100E41F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB2FC2326411100E41F38 /* Assets.xcassets */; };
-		9ADFB3002326411100E41F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB2FE2326411100E41F38 /* LaunchScreen.storyboard */; };
 		9ADFB3032326411100E41F38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB3022326411100E41F38 /* main.m */; };
 		9ADFB30D2326411100E41F38 /* xxerLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB30C2326411100E41F38 /* xxerLibTests.m */; };
 		9ADFB3182326411100E41F38 /* xxerLibUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB3172326411100E41F38 /* xxerLibUITests.m */; };
@@ -39,16 +37,14 @@
 /* Begin PBXFileReference section */
 		66BE3488D7643821F71BF438 /* libPods-xxerLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-xxerLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A62390E2330A8AD00FE4680 /* XXerPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXerPrefixHeader.pch; sourceTree = "<group>"; };
+		9A6239132330C61400FE4680 /* XxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XxerViewController.h; sourceTree = "<group>"; };
+		9A6239142330C61400FE4680 /* XxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XxerViewController.m; sourceTree = "<group>"; };
 		9AA4550023279C8600C4D560 /* XxerTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XxerTabBarController.h; sourceTree = "<group>"; };
 		9AA4550123279C8600C4D560 /* XxerTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XxerTabBarController.m; sourceTree = "<group>"; };
 		9ADFB2F02326411000E41F38 /* xxerLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xxerLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADFB2F32326411000E41F38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9ADFB2F42326411000E41F38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9ADFB2F62326411000E41F38 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9ADFB2F72326411000E41F38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9ADFB2FA2326411000E41F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9ADFB2FC2326411100E41F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9ADFB2FF2326411100E41F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ADFB3012326411100E41F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ADFB3022326411100E41F38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9ADFB3082326411100E41F38 /* xxerLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xxerLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,9 +100,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A62390F2330C5D800FE4680 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9A6239112330C5D800FE4680 /* Model */,
+				9A6239122330C5D800FE4680 /* View */,
+				9A6239102330C5D800FE4680 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9A6239102330C5D800FE4680 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A6239112330C5D800FE4680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A6239122330C5D800FE4680 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9AA454FD23279A7A00C4D560 /* code */ = {
 			isa = PBXGroup;
 			children = (
+				9A62390F2330C5D800FE4680 /* Home */,
 				9AA454FE23279AA600C4D560 /* Base */,
 			);
 			path = code;
@@ -125,6 +153,8 @@
 			children = (
 				9AA4550023279C8600C4D560 /* XxerTabBarController.h */,
 				9AA4550123279C8600C4D560 /* XxerTabBarController.m */,
+				9A6239132330C61400FE4680 /* XxerViewController.h */,
+				9A6239142330C61400FE4680 /* XxerViewController.m */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
@@ -157,11 +187,7 @@
 				9AA454FD23279A7A00C4D560 /* code */,
 				9ADFB2F32326411000E41F38 /* AppDelegate.h */,
 				9ADFB2F42326411000E41F38 /* AppDelegate.m */,
-				9ADFB2F62326411000E41F38 /* ViewController.h */,
-				9ADFB2F72326411000E41F38 /* ViewController.m */,
-				9ADFB2F92326411000E41F38 /* Main.storyboard */,
 				9ADFB2FC2326411100E41F38 /* Assets.xcassets */,
-				9ADFB2FE2326411100E41F38 /* LaunchScreen.storyboard */,
 				9ADFB3012326411100E41F38 /* Info.plist */,
 				9ADFB3022326411100E41F38 /* main.m */,
 				9ADFB325232641BB00E41F38 /* lib */,
@@ -300,9 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ADFB3002326411100E41F38 /* LaunchScreen.storyboard in Resources */,
 				9ADFB2FD2326411100E41F38 /* Assets.xcassets in Resources */,
-				9ADFB2FB2326411000E41F38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AA4550223279C8600C4D560 /* XxerTabBarController.m in Sources */,
-				9ADFB2F82326411000E41F38 /* ViewController.m in Sources */,
+				9A6239152330C61400FE4680 /* XxerViewController.m in Sources */,
 				9ADFB3032326411100E41F38 /* main.m in Sources */,
 				9ADFB2F52326411000E41F38 /* AppDelegate.m in Sources */,
 			);
@@ -406,25 +430,6 @@
 			targetProxy = 9ADFB3142326411100E41F38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9ADFB2F92326411000E41F38 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9ADFB2FA2326411000E41F38 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9ADFB2FE2326411100E41F38 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9ADFB2FF2326411100E41F38 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9ADFB31A2326411100E41F38 /* Debug */ = {
