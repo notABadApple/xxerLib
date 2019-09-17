@@ -1,0 +1,57 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'xxerLib' do
+
+# 一个对FMDB进行类Hibernate封装的iOS库，支持Objective-C 和 Swift
+pod 'JRDB'
+    
+# U-Share SDK UI模块（分享面板，建议添加）
+pod 'UMengUShare/UI'
+    
+# 集成微信(完整版14.4M)
+pod 'UMengUShare/Social/ReducedWeChat'
+    
+# 集成新浪微博(完整版25.3M)
+pod 'UMengUShare/Social/ReducedSina'
+
+# 百度地图SDK
+pod 'BaiduMapKit'
+
+# 使用pull-to-refresh的简单方法
+pod 'MJRefresh'
+
+#JSON和模型之间快速，方便且非侵入式的转换框架
+pod 'MJExtension'
+
+# 适用于iOS，macOS，watchOS和tvOS的令人愉快的网络框架
+pod 'AFNetworking'
+
+# 无代码插入式通用库允许防止键盘滑动问题并覆盖UITextField / UITextView
+pod 'IQKeyboardManager'
+
+# 利用AutoLayout NSLayoutConstraints的强大功能。支持iOS和OSX自动布局
+pod 'Masonry'
+
+# 具有缓存支持的异步图像下载器作为UIImageView类别
+pod 'SDWebImage'
+
+# 指示器的自定义
+pod'MBProgressHUD'
+
+#自动滚动横幅。无限循环图片，文字轮播器
+pod'SDCycleScrollView'
+
+#简化iOS中的日期和时间处理
+pod'DateTools'
+
+#js和oc交互
+pod'WebViewJavascriptBridge'
+
+#正则
+pod 'RegexKitLite'
+
+#响应式变成框架
+pod 'ReactiveObjC'
+
+end
