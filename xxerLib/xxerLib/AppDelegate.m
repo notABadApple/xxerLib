@@ -18,12 +18,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    
-    
-    
-    
-    
+    self.tabBar = [[XxerTabBarController alloc] init];
+    self.tabBar.view.frame = [UIScreen mainScreen].bounds;
+    self.tabBar.view.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.tabBar;
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

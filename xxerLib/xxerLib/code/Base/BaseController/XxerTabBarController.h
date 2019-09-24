@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XxerHomeViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XxerTabBarController : UITabBarController
+
+@property (nonatomic, strong) XxerHomeViewController *homeVc;
 
 @end
 

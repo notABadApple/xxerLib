@@ -12,9 +12,13 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+//头文件
+#import "MJRefresh.h"
+
+//宏定义
+//屏幕宽高
 #define XXER_SCREEN_WIDTH      [[UIScreen mainScreen] bounds].size.width
 #define XXER_SCREEN_HEIGHT     [[UIScreen mainScreen] bounds].size.height
-
 
 //DebugLog
 #ifdef DEBUG

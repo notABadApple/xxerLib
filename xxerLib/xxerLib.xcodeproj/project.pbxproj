@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		54BDC3EC0CC01122F3F0EA0A /* libPods-xxerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BE3488D7643821F71BF438 /* libPods-xxerLib.a */; };
+		9A466E3D233122530012AE19 /* XxerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A466E3C233122530012AE19 /* XxerTableView.m */; };
 		9A6239152330C61400FE4680 /* XxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6239142330C61400FE4680 /* XxerViewController.m */; };
+		9A6239212330F01000FE4680 /* XxerHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6239202330F01000FE4680 /* XxerHomeViewController.m */; };
 		9AA4550223279C8600C4D560 /* XxerTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4550123279C8600C4D560 /* XxerTabBarController.m */; };
 		9ADFB2F52326411000E41F38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB2F42326411000E41F38 /* AppDelegate.m */; };
 		9ADFB2FD2326411100E41F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB2FC2326411100E41F38 /* Assets.xcassets */; };
@@ -36,9 +38,13 @@
 
 /* Begin PBXFileReference section */
 		66BE3488D7643821F71BF438 /* libPods-xxerLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-xxerLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A466E3B233122530012AE19 /* XxerTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XxerTableView.h; sourceTree = "<group>"; };
+		9A466E3C233122530012AE19 /* XxerTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XxerTableView.m; sourceTree = "<group>"; };
 		9A62390E2330A8AD00FE4680 /* XXerPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXerPrefixHeader.pch; sourceTree = "<group>"; };
 		9A6239132330C61400FE4680 /* XxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XxerViewController.h; sourceTree = "<group>"; };
 		9A6239142330C61400FE4680 /* XxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XxerViewController.m; sourceTree = "<group>"; };
+		9A62391F2330F01000FE4680 /* XxerHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XxerHomeViewController.h; sourceTree = "<group>"; };
+		9A6239202330F01000FE4680 /* XxerHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XxerHomeViewController.m; sourceTree = "<group>"; };
 		9AA4550023279C8600C4D560 /* XxerTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XxerTabBarController.h; sourceTree = "<group>"; };
 		9AA4550123279C8600C4D560 /* XxerTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XxerTabBarController.m; sourceTree = "<group>"; };
 		9ADFB2F02326411000E41F38 /* xxerLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xxerLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +106,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A466E3A233122390012AE19 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				9A466E3B233122530012AE19 /* XxerTableView.h */,
+				9A466E3C233122530012AE19 /* XxerTableView.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
 		9A62390F2330C5D800FE4680 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +128,8 @@
 		9A6239102330C5D800FE4680 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9A62391F2330F01000FE4680 /* XxerHomeViewController.h */,
+				9A6239202330F01000FE4680 /* XxerHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +160,7 @@
 		9AA454FE23279AA600C4D560 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9A466E3A233122390012AE19 /* BaseView */,
 				9AA454FF23279C3400C4D560 /* BaseController */,
 			);
 			path = Base;
@@ -397,6 +415,8 @@
 				9A6239152330C61400FE4680 /* XxerViewController.m in Sources */,
 				9ADFB3032326411100E41F38 /* main.m in Sources */,
 				9ADFB2F52326411000E41F38 /* AppDelegate.m in Sources */,
+				9A466E3D233122530012AE19 /* XxerTableView.m in Sources */,
+				9A6239212330F01000FE4680 /* XxerHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +569,7 @@
 			baseConfigurationReference = A4F27DE796F7A26F2DA799B0 /* Pods-xxerLib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xxerLib/XXerPrefixHeader.pch";
 				INFOPLIST_FILE = xxerLib/Info.plist;
@@ -558,7 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = XxerTool.xxerLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -567,6 +588,7 @@
 			baseConfigurationReference = F481C4FEE1D33396F14DFF27 /* Pods-xxerLib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xxerLib/XXerPrefixHeader.pch";
 				INFOPLIST_FILE = xxerLib/Info.plist;
@@ -576,7 +598,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = XxerTool.xxerLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
